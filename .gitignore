@@ -1,0 +1,18 @@
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+
+# Sensitive files
+PCP-6UMWXDR-openrc.sh  # Ignore OpenStack credentials file
+multi-server.rke2.yaml # Ignore if it contains sensitive data
+
+# Local configuration files
+terraform.auto.tfvars
+*.terraform.lock.hcl
+
+# IDE-specific files (optional)
+.idea/
+.vscode/
